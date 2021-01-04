@@ -5,7 +5,6 @@ namespace EmptyWeb.Controllers
 {
     public class MainPageController : Controller
     {
-        [Route("")]
         [Route("[controller]/[action]")]
         public IActionResult Self()
         {
@@ -17,8 +16,20 @@ namespace EmptyWeb.Controllers
         [Route("Reactor/{react}")]
         public IActionResult Reactor(string react)
         {
-            
             return Content($"React on {react} message");
+        }
+
+        [Route("")]
+        public IActionResult MainPage()
+        {
+            return View();
+        }
+
+
+        [Route("default")]
+        public IActionResult Default()
+        {
+            return View();
         }
     }
 }
