@@ -9,5 +9,24 @@
 </head>
 <body>
     <h2>Привет ASP.NET Core!</h2>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td>Модель</td>
+            <td>Производитель</td>
+            <td>Цена</td>
+            <td></td>
+        </tr>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Age</td>
+                <td>@user.Id</td>
+            </tr>
+        }
+    </table>
 </body>
 </html>

@@ -1,10 +1,19 @@
+using EmptyWeb.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Linq;
 
 namespace EmptyWeb.Controllers
 {
     public class MainPageController : Controller
     {
+        private UsersContext _context;
+
+        public MainPageController(UsersContext context)
+        {
+            _context = context;
+        }
+
         [Route("[controller]/[action]")]
         public IActionResult Self()
         {
@@ -22,9 +31,8 @@ namespace EmptyWeb.Controllers
         [Route("")]
         public IActionResult MainPage()
         {
-            return View();
+            return View(_context.Users.ToList());
         }
-
 
         [Route("default")]
         public IActionResult Default()
