@@ -31,6 +31,9 @@ https://www.beekeeperstudio.io
 Установить постгресс
 docker pull postgres 
 
+"psqldefaultconnection": "Host=localhost;Port=5432;Database=emptywebdb;Username=aspnetuser;Password=qazxsw12!"
+"psqldefaultconnection": "Host=localhost;Port=5432;Database=emptywebdb;Username=aspnetuser;Password=qazxsw12!"
+
 docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v ~/Desktop/Postgress:/var/lib/postgresql/data postgres
 
 CREATE DATABASE yourdbname;
