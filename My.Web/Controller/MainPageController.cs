@@ -1,9 +1,9 @@
-using EmptyWeb.Model;
 using Microsoft.AspNetCore.Mvc;
+using My.Entity.Model;
 using System;
 using System.Linq;
 
-namespace EmptyWeb.Controllers
+namespace My.Web.Controllers
 {
     public class MainPageController : Controller
     {

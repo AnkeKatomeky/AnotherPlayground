@@ -1,7 +1,7 @@
 using System.Linq;
-using EmptyWeb.Model;
+using My.Entity.Model;
 
-namespace EmptyWeb.Busines
+namespace My.Entity.Busines
 {
     public static class DbIniter
     {

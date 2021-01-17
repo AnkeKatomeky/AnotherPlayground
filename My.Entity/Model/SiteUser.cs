@@ -1,6 +1,6 @@
 using System;
 
-namespace EmptyWeb.Model
+namespace My.Entity.Model
 {
     public class SiteUser
     {

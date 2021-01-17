@@ -1,7 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace EmptyWeb.Model
+namespace My.Entity.Model
 {
     public class UsersContext : DbContext
     {
