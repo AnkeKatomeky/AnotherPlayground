@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using My.Entity.Busines;
+using My.Busines;
 using My.Entity.Model;
 
 namespace My.Web

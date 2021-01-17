@@ -1,7 +1,7 @@
 using System.Linq;
 using My.Entity.Model;
 
-namespace My.Entity.Busines
+namespace My.Busines
 {
     public static class DbIniter
     {
